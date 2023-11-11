@@ -1,4 +1,9 @@
-var __init__: () => any = function () {
+let time_inProgram: number = 0;
+setInterval(() => {
+    time_inProgram++;
+    // TODO: console.log(time_inProgram);
+})
+var __init__: () => any = function () { // FIXME: BECOME A FUNCTION NOT A VARIABLE (FUNCTION)
     const __init__string = input('"Пожалуйста инициализируйте ваш язык >>>');
     switch (__init__string) {
         case 'ru':
@@ -11,6 +16,7 @@ var __init__: () => any = function () {
             }
         default:
             console.log('Ошибка инициализации строки')
+        // TODO: PUT MORE THINGS
     }
 }
 

@@ -1,3 +1,3 @@
 # A russian calculator
 
-This is a russian calculator, you can trnalsate to english by init the language.
+This is a russian calculator, you can tranlsate to english by init the language.

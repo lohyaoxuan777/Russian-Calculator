@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "name": "russian-calculator",
+  "version": "1.0.0",
+  "description": "a soviet era calculator",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/node": "^20.8.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "calculator",
+    "soviet-union",
+    "russian"
+  ],
+  "author": "Jayden Loh",
+  "license": "ISC"
+}

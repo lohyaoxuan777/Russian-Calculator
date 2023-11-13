@@ -11,7 +11,6 @@ function __init__() {
             }
         default:
             console.log('Ошибка инициализации строки')
-        // TODO: PUT MORE THINGS
     }
 }
 

@@ -1,4 +1,8 @@
-var __init__ = function () {
+var time_inProgram = 0;
+setInterval(function () {
+    time_inProgram++;
+}, 1000);
+function __init__() {
     var __init__string = input('"Пожалуйста инициализируйте ваш язык >>>');
     switch (__init__string) {
         case 'ru':
@@ -11,8 +15,9 @@ var __init__ = function () {
             }
         default:
             console.log('Ошибка инициализации строки');
+        // TODO: PUT MORE THINGS
     }
-};
+}
 function en_calc() {
     var math_input = Number(input('Enter a number: '));
     var math_operator = input('Enter a operator: ');
@@ -68,8 +73,8 @@ function en_calc() {
             break;
         default:
             console.log('Error operator');
+            console.log(time_inProgram);
     }
-    console.clear();
 }
 ;
 var input = require('prompt-sync')({ sigint: true });

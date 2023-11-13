@@ -1,10 +1,4 @@
-let time_inProgram: number = 0;
-setInterval(() => {
-    time_inProgram++;
-    // TODO: console.log(time_inProgram);
-})
-
-function __init() { 
+function __init__() { 
     const __init__string = input('"Пожалуйста инициализируйте ваш язык >>>');
     switch (__init__string) {
         case 'ru':
@@ -76,9 +70,8 @@ function en_calc() {
             __init__();
             break
         default:
-            console.log('Error operator')
+            console.log('Error operator');
     }
-    console.clear();
 };
 
 const input = require('prompt-sync')({sigint: true});
@@ -143,7 +136,6 @@ function ru_calc() {
         default:
             console.log('Оператор ошибки')
     }
-    console.clear();
 }
 
 while (true) {

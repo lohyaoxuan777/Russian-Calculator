@@ -3,7 +3,8 @@ setInterval(() => {
     time_inProgram++;
     // TODO: console.log(time_inProgram);
 })
-var __init__: () => any = function () { // FIXME: BECOME A FUNCTION NOT A VARIABLE (FUNCTION)
+
+function __init() { 
     const __init__string = input('"Пожалуйста инициализируйте ваш язык >>>');
     switch (__init__string) {
         case 'ru':

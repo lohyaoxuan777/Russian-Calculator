@@ -1,7 +1,3 @@
-var time_inProgram = 0;
-setInterval(function () {
-    time_inProgram++;
-}, 1000);
 function __init__() {
     var __init__string = input('"Пожалуйста инициализируйте ваш язык >>>');
     switch (__init__string) {
@@ -73,7 +69,6 @@ function en_calc() {
             break;
         default:
             console.log('Error operator');
-            console.log(time_inProgram);
     }
 }
 ;
@@ -137,7 +132,6 @@ function ru_calc() {
         default:
             console.log('Оператор ошибки');
     }
-    console.clear();
 }
 while (true) {
     ru_calc();

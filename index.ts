@@ -1,5 +1,5 @@
 function __init__() { 
-    const __init__string = input('"Пожалуйста инициализируйте ваш язык >>>');
+    const __init__string = input('Пожалуйста инициализируйте ваш язык >>>');
     switch (__init__string) {
         case 'ru':
             while (true) {

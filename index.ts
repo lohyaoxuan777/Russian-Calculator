@@ -1,7 +1,4 @@
-let lucky_list: number[] = [];
-for (let i = 1; i <= 100; i++) {
-    lucky_list.push(i);
-};
+import { luckyFunction } from "./lucky";
 
 function __init__() { 
     const __init__string = input('Пожалуйста инициализируйте ваш язык >>>');
@@ -17,10 +14,6 @@ function __init__() {
         default:
             console.log('Ошибка инициализации строки')
     }
-}
-
-function __lucky__() {
-    console.log("You got lucky, 1 in 100 people got this lucky message!");
 }
 
 function en_calc() {
@@ -79,10 +72,7 @@ function en_calc() {
             break
         default:
             console.log('Error operator');
-            let random = Math.random() * 100;
-            if (random == 77) {
-                __lucky__();
-            }
+            luckyFunction();
     }
 };
 

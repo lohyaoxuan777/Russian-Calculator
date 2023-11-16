@@ -1,8 +1,6 @@
-var lucky_list = [];
-for (var i = 1; i <= 100; i++) {
-    lucky_list.push(i);
-}
-;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var lucky_1 = require("./lucky");
 function __init__() {
     var __init__string = input('Пожалуйста инициализируйте ваш язык >>>');
     switch (__init__string) {
@@ -17,9 +15,6 @@ function __init__() {
         default:
             console.log('Ошибка инициализации строки');
     }
-}
-function __lucky__() {
-    console.log("You got lucky, 1 in 100 people got this lucky message!");
 }
 function en_calc() {
     var math_input = Number(input('Enter a number: '));
@@ -76,10 +71,7 @@ function en_calc() {
             break;
         default:
             console.log('Error operator');
-            var random = Math.random() * 100;
-            if (random == 77) {
-                __lucky__();
-            }
+            (0, lucky_1.luckyFunction)();
     }
 }
 ;

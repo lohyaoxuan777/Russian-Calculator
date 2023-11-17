@@ -13,6 +13,9 @@ function __init__() {
             while (true) {
                 en_calc();
             }
+        case 'lucky':
+            console.log("You are now in lucky mode");
+            luckyFunction();
         default:
             console.log('Ошибка инициализации строки')
     }

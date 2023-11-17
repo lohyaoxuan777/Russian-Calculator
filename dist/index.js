@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var lucky_1 = require("../lucky");
+var lucky_1 = require("../lucky"); // ! This is required, do not remove
+var input = require('prompt-sync')({ sigint: true });
 function __init__() {
     var __init__string = input('Пожалуйста инициализируйте ваш язык >>>');
     switch (__init__string) {
@@ -12,6 +13,9 @@ function __init__() {
             while (true) {
                 en_calc();
             }
+        case 'lucky':
+            console.log("You are now in lucky mode");
+            (0, lucky_1.luckyFunction)();
         default:
             console.log('Ошибка инициализации строки');
     }
@@ -71,11 +75,10 @@ function en_calc() {
             break;
         default:
             console.log('Error operator');
-            (0, lucky_1.luckyFunction)();
+            (0, lucky_1.luckyFunction)(); // ! This is also required, do not remove
     }
 }
 ;
-var input = require('prompt-sync')({ sigint: true });
 function ru_calc() {
     var math_input = Number(input('Введите число: '));
     var math_operator = input('Введите оператор: ');

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var lucky_1 = require("./lucky");
+var lucky_1 = require("../lucky");
 function __init__() {
     var __init__string = input('Пожалуйста инициализируйте ваш язык >>>');
     switch (__init__string) {

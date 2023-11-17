@@ -1,4 +1,6 @@
-import { luckyFunction } from "./lucky";
+import { luckyFunction } from "./lucky"; // ! This is required, do not remove
+
+const input = require('prompt-sync')({sigint: true});
 
 function __init__() { 
     const __init__string = input('Пожалуйста инициализируйте ваш язык >>>');
@@ -72,11 +74,9 @@ function en_calc() {
             break
         default:
             console.log('Error operator');
-            luckyFunction();
+            luckyFunction(); // ! This is also required, do not remove
     }
 };
-
-const input = require('prompt-sync')({sigint: true});
 
 function ru_calc() {
     const math_input: number = Number(input('Введите число: '));

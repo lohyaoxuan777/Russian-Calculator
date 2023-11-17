@@ -1,0 +1,6 @@
+Commands
+--------
+git add . // Stage the changes you want to include in the commit. You can use the following command to stage all changes:
+git commit -m "Commit Message here"
+
+uglifyjs dist/*.js -o dist/*.min.js // compile index.js to index.min.js

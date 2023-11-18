@@ -2,7 +2,7 @@ import { luckyFunction } from "./lucky"; // ! This is required, do not remove
 
 const input = require('prompt-sync')({sigint: true});
 
-function __init__() { 
+const __init__ = () => { 
     const __init__string = input('Пожалуйста инициализируйте ваш язык >>>');
     switch (__init__string) {
         case 'ru':

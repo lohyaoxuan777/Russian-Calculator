@@ -1,5 +1,4 @@
 import { luckyFunction } from "./lucky"; // ! This is required, do not remove
-
 const input = require('prompt-sync')({sigint: true});
 
 const __init__ = () => { 
@@ -8,17 +7,17 @@ const __init__ = () => {
         case 'ru':
             while (true) {
                 ru_calc();
-            }
+            };
         case 'en':
             while (true) {
                 en_calc();
-            }
+            };
         case 'lucky':
             luckyFunction();
         default:
             console.log('Ошибка инициализации строки')
-    }
-}
+    };
+};
 
 function en_calc() {
     const math_input: number = Number(input('Enter a number: '));
@@ -77,7 +76,7 @@ function en_calc() {
         default:
             console.log('Error operator');
             luckyFunction(); // ! This is also required, do not remove
-    }
+    };
 };
 
 function ru_calc() {
@@ -139,9 +138,9 @@ function ru_calc() {
             break
         default:
             console.log('Оператор ошибки')
-    }
-}
+    };
+};
 
 while (true) {
     ru_calc();
-}
+};

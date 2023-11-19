@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var lucky_1 = require("./lucky"); // ! This is required, do not remove
+var lucky_1 = require("../lucky"); // ! This is required, do not remove
 var input = require('prompt-sync')({ sigint: true });
 var __init__ = function () {
     var __init__string = input('Пожалуйста инициализируйте ваш язык >>>');
@@ -9,15 +9,18 @@ var __init__ = function () {
             while (true) {
                 ru_calc();
             }
+            ;
         case 'en':
             while (true) {
                 en_calc();
             }
+            ;
         case 'lucky':
             (0, lucky_1.luckyFunction)();
         default:
             console.log('Ошибка инициализации строки');
     }
+    ;
 };
 function en_calc() {
     var math_input = Number(input('Enter a number: '));
@@ -76,6 +79,7 @@ function en_calc() {
             console.log('Error operator');
             (0, lucky_1.luckyFunction)(); // ! This is also required, do not remove
     }
+    ;
 }
 ;
 function ru_calc() {
@@ -137,7 +141,10 @@ function ru_calc() {
         default:
             console.log('Оператор ошибки');
     }
+    ;
 }
+;
 while (true) {
     ru_calc();
 }
+;

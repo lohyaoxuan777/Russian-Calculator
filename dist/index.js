@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var lucky_1 = require("../lucky"); // ! This is required, do not remove
+var lucky_1 = require("./lucky"); // ! This is required, do not remove
 var input = require('prompt-sync')({ sigint: true });
 var __init__ = function () {
     var __init__string = input('Пожалуйста инициализируйте ваш язык >>>');

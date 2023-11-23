@@ -56,6 +56,33 @@ function en_calc() {
         console.log(answer);
     }
     ;
+    function sqrt() {
+        var answer;
+        answer = Math.pow(math_input, 1 / math_input2);
+        console.log(answer);
+    }
+    ;
+    function pow() {
+        var answer;
+        answer = Math.pow(math_input, math_input2);
+        console.log(answer);
+    }
+    ;
+    function abs() {
+        var answer;
+        answer = Math.abs(math_input);
+        console.log(answer);
+    }
+    function sin() {
+        var answer;
+        answer = Math.sin(math_input);
+        console.log(answer);
+    }
+    function cos() {
+        var answer;
+        answer = Math.cos(math_input);
+        console.log(answer);
+    }
     switch (math_operator) {
         case '+':
             add();
@@ -71,6 +98,21 @@ function en_calc() {
             break;
         case '%':
             div_rev();
+            break;
+        case 'sqrt':
+            sqrt();
+            break;
+        case 'pow':
+            pow();
+            break;
+        case 'abs':
+            abs();
+            break;
+        case 'sin':
+            sin();
+            break;
+        case 'cos':
+            cos();
             break;
         case 'init':
             __init__();
@@ -116,6 +158,33 @@ function ru_calc() {
         console.log(answer);
     }
     ;
+    function sqrt() {
+        var answer;
+        answer = Math.pow(math_input, 1 / math_input2);
+        console.log(answer);
+    }
+    ;
+    function pow() {
+        var answer;
+        answer = Math.pow(math_input, math_input2);
+        console.log(answer);
+    }
+    ;
+    function abs() {
+        var answer;
+        answer = Math.abs(math_input);
+        console.log(answer);
+    }
+    function sin() {
+        var answer;
+        answer = Math.sin(math_input);
+        console.log(answer);
+    }
+    function cos() {
+        var answer;
+        answer = Math.cos(math_input);
+        console.log(answer);
+    }
     switch (math_operator) {
         case '+':
             add();
@@ -134,6 +203,21 @@ function ru_calc() {
             break;
         case 'ясный':
             console.clear();
+            break;
+        case 'sqrt':
+            sqrt();
+            break;
+        case 'pow':
+            pow();
+            break;
+        case 'abs':
+            abs();
+            break;
+        case 'sin':
+            sin();
+            break;
+        case 'cos':
+            cos();
             break;
         case 'init':
             __init__();

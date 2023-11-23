@@ -12,6 +12,9 @@ const __init__ = () => {
             while (true) {
                 en_calc();
             };
+        case 'audio':
+            const audio: HTMLAudioElement = new Audio('./lucky.mp3');
+            audio.play();
         case 'lucky':
             luckyFunction();
         default:

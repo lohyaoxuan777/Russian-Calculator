@@ -15,6 +15,12 @@ var __init__ = function () {
                 en_calc();
             }
             ;
+        case 'audio':
+            var audio = new Audio('./lucky.mp3');
+            audio.play();
+        case 'date':
+            var date = new Date();
+            console.log(date);
         case 'lucky':
             (0, lucky_1.luckyFunction)();
         default:

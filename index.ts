@@ -15,6 +15,9 @@ const __init__ = () => {
         case 'audio':
             const audio: HTMLAudioElement = new Audio('./lucky.mp3');
             audio.play();
+        case 'date':
+            const date: Date = new Date();
+            console.log(date);
         case 'lucky':
             luckyFunction();
         default:
